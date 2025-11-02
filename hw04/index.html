@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+     這次做主動脈瓣標註，流程比想像中麻煩很多。雖然能用 3D Slicer 把 .nii 轉成 .dcm，再丟到 Colab 轉成 .png，但在開始用 Labelme 標記時才發現，心臟瓣膜真的超難看出來，影像灰灰的又不明顯，常常不確定標的位置是不是正確。雖然整體標註速度還算快，但在判斷 CT 切面的時候真的有點困難，也因此更能體會到醫療影像標註的挑戰。
     </div>
   </div>
 
@@ -169,19 +169,25 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 將06_ct.nii.gz 透過3D Slicer 還原成233切的 .dcm檔，將含有主動脈瓣的 .dcm壓縮成 dcm.zip 透過 Colab 轉成 .png檔。
+使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。
+將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 將06_ct.nii.gz 透過3D Slicer 擴充圖片至64張。
+使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。
+將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>	Strong baseline - 上傳整理完的一份 .txt 檔至 github
+AP 分數，名列全班前20名。(1pt)
+AP 分數，名列全班前10名。(1pt)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
@@ -197,7 +203,7 @@
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.youtube.com/watch?v=f4UG4JnBk6M" type="video/mp4">
       </video>
     </div>
   </div>
@@ -252,3 +258,4 @@
 
 </body>
 </html>
+
