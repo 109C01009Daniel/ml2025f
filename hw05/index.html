@@ -194,30 +194,33 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
+<div class="row hw12 bottomrow">
+
   <!-- 1. Simple Baseline -->
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <img src="=simple.jpg" class="card-img-top" alt="Simple Baseline mAP50">
-        <div class="card-body">
-          <h5 class="card-title">Simple Baseline mAP50</h5>
-          <p class="card-text">Simple Baseline 的 mAP50 分數圖片。</p>
-        </div>
+  <div class="col-md-6 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Simple Baseline mAP50</h5>
+        <p class="card-text">Simple Baseline 的 mAP50 分數圖片。</p>
+        <img src="simple.jpg" class="img-fluid mb-2" alt="Simple Baseline">
       </div>
     </div>
-  
-    <!-- 2. Medium Baseline -->
-  </div>
-    <div class="col-md-6 mb-4">
-      <div class="card">
-        <img src="medium.jpg" class="card-img-top" alt="Medium Baseline mAP50">
-        <div class="card-body">
-          <h5 class="card-title">Medium Baseline mAP50</h5>
-          <p class="card-text">使用 Baseline 模型接續訓練 50 個 Epochs 得到更高分。</p>
-        </div>
-      </div>
   </div>
 
+  <!-- 2. Medium Baseline -->
+  <div class="col-md-6 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Medium Baseline mAP50</h5>
+        <p class="card-text">使用 Baseline 模型接續訓練 50 個 Epochs 得到更高分。</p>
+        <!-- 上下兩張圖片 -->
+        <img src="medium1.jpg" class="img-fluid mb-2" alt="Medium Baseline 1">
+        <img src="medium2.jpg" class="img-fluid mb-2" alt="Medium Baseline 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Strong Baseline -->
   <div class="col-md-6 mb-4">
     <div class="card">
       <div class="card-body">
@@ -225,10 +228,9 @@
         <p class="card-text">
           使用 YOLOv12m 與 YOLOv9t 訓練得到更高精度。
         </p>
-
-        <!-- 上下圖片 -->
-        <img src="yoloc12m.jpg" class="img-fluid mb-2" alt="Medium Baseline 1">
-        <img src="yolov9t.jpg" class="img-fluid mb-2" alt="Medium Baseline 2">
+        <!-- 上下兩張圖片 -->
+        <img src="yolov12m.jpg" class="img-fluid mb-2" alt="YOLOv12m">
+        <img src="yolov9t.jpg" class="img-fluid mb-2" alt="YOLOv9t">
 
         <!-- Colab 連結 -->
         <p class="card-text">
@@ -239,6 +241,20 @@
       </div>
     </div>
   </div>
+
+  <!-- 4. Optional / 比較圖示 -->
+  <div class="col-md-6 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">模型比較</h5>
+        <p class="card-text">比較 Simple、Medium 與 Strong Baseline 訓練後的效果。</p>
+        <img src="comparison.jpg" class="img-fluid mb-2" alt="Comparison">
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
   <!-- ------------------------------------------------>
@@ -291,4 +307,5 @@
 
 </body>
 </html>
+
 
