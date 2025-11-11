@@ -169,19 +169,19 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成 Colab baseline 的預測並上傳至競賽網頁</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 使用 HW5 Medium baseline 訓練出來的權重檔預測並上傳至競賽網頁</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 得到比 Simple baseline 更高的預測分數</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
@@ -195,12 +195,43 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <!-- 1. Simple Baseline -->
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Simple Baseline</h5>
+          <p class="card-text">Simple Baseline 的圖片。</p>
+          <img src="simple.jpg" class="img-fluid" alt="Simple Baseline">
+        </div>
+      </div>
     </div>
-  </div>
+
+  <!-- 2. Medium Baseline -->
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Medium Baseline</h5>
+          <p class="card-text">Medium Baseline的圖片</p>
+          <img src="medium.jpg" class="img-fluid mb-2" alt="Medium Baseline 1">
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Strong Baseline -->
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Strong Baseline</h5>
+          <p class="card-text">Strong Baseline的圖片</p>
+          <img src="yolov12m.jpg" class="img-fluid mb-2" alt="YOLOv12m">
+          <p class="card-text">
+            <a href="https://colab.research.google.com/drive/1raYuBq4us8GCAuCFkiAudEqLd59TvT0E?usp=sharing" target="_blank">
+              Colab 連結  
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
 
   <!-- ------------------------------------------------>
 
@@ -252,3 +283,4 @@
 
 </body>
 </html>
+
